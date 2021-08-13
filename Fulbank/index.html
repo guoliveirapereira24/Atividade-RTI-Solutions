@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST" action="./calcular.php">
+        <h1>Calcular salários Fulbank</h1>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" required />
+
+        <label for="salarioAtual">Salário atual</label>
+        <input id="salarioAtual" name="salarioAtual" required/>
+
+        <div class="input-radio">
+            <label for="genero">Masculino</label>
+            <input id="masculino" type="radio" name="genero" value="m" required/>
+        </div>
+        <div class="input-radio">
+            <label for="genero">Feminino</label>
+            <input id="feminino" type="radio" name="genero" value="f" required/>
+        </div>
+        <div class="input-radio" style="margin-bottom: 10px;">
+            <label for="genero">Outros</label>
+            <input id="outros" type="radio" name="genero" value="o" required/>
+        </div>
+
+        <label for="cargo">Cargo</label>
+        <select name="cargo" id="cargo">
+            <option value="">SELECIONE</option>
+            <option>Gerente de Projetos</option>
+            <option>Gerente de Produto</option>
+            <option>Desenvolvedor Back-End</option>
+            <option>Desenvolvedor Front-End</option>
+            <option>DevOps</option>
+            <option>Designer UX/UI</option>
+            <option>QA</option>
+            <option>Engenheiro de Software</option>
+            <option>Arquitetos</option>
+            <option>DBA</option>
+            <option>Analista de Sistemas</option>
+
+
+
+        </select>
+
+
+
+        <button>Calcular</button>
+    </form>
+</body>
+
+</html>
